@@ -59,7 +59,7 @@
     <script>
     var update_file_list = function() {
         $.get("/api/ls", function(data) {
-            השר ul = $('<ul class="list-group">');
+            var ul = $('<ul class="list-group">');
             
             $.each(data, function(i, d) {
                 var a = $('<a href="#">')
